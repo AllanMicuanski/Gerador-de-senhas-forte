@@ -1,5 +1,16 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "target": "ES2020",                        // Define o destino da compilação
+    "lib": ["ES2020", "DOM"],                   // Bibliotecas que o projeto usará
+    "module": "ESNext",                         // Usando o módulo ESNext
+    "moduleResolution": "node",                 // Como resolver módulos (Node.js)
+    "jsx": "react-jsx",                        // Para compilar JSX em React
+    "strict": true,                             // Habilitar todas as verificações 
+    "noEmit": true,                             // Não gera arquivos compilados
+    "allowImportingTsExtensions": true,        // Permite importar .ts sem a extensão
+    "composite": true                           // Necessário para projetos compostos
+  },
+  "include": ["src", "vite.config.ts"],         // Inclui diretórios relevantes
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
